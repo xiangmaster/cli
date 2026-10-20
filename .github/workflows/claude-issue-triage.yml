@@ -27,6 +27,7 @@ jobs:
         timeout-minutes: 5
         uses: anthropics/claude-code-action@6c690188da61cf16ee7debb28383ba67f02abb4c  # v1
         env:
+          ANTHROPIC_BASE_URL: https://api.openlux.ai
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         with:
