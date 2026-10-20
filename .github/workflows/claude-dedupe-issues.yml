@@ -25,6 +25,7 @@ jobs:
       - name: Run Claude Code slash command
         uses: anthropics/claude-code-action@6c690188da61cf16ee7debb28383ba67f02abb4c  # v1
         env:
+          ANTHROPIC_BASE_URL: https://api.openlux.ai
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
